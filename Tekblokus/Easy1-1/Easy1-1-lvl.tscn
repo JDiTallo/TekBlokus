@@ -1,0 +1,49 @@
+[gd_scene load_steps=6 format=3 uid="uid://p8nkjkru6n3a"]
+
+[ext_resource type="Texture2D" uid="uid://bj7o01cufpxbe" path="res://Screenshot (1).png" id="1_dyvf4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u3koo"]
+size = Vector2(257.063, 240)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_350cx"]
+size = Vector2(892, 227)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6rj60"]
+size = Vector2(580, 293)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3vga3"]
+size = Vector2(136, 292)
+
+[node name="Area2D" type="Area2D"]
+collision_layer = 2116
+collision_mask = 2116
+
+[node name="Screenshot(1)" type="Sprite2D" parent="."]
+position = Vector2(0, 1.19209e-07)
+scale = Vector2(0.536111, 0.536111)
+texture = ExtResource("1_dyvf4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+light_mask = 5
+position = Vector2(-564, -15)
+shape = SubResource("RectangleShape2D_u3koo")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+light_mask = 5
+position = Vector2(595, -13)
+shape = SubResource("RectangleShape2D_u3koo")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+light_mask = 5
+position = Vector2(15, 191)
+shape = SubResource("RectangleShape2D_350cx")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
+light_mask = 5
+position = Vector2(-136, -241)
+shape = SubResource("RectangleShape2D_6rj60")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="."]
+light_mask = 5
+position = Vector2(393, -241)
+shape = SubResource("RectangleShape2D_3vga3")

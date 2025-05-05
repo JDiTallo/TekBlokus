@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://fil0b8fmwwvh"]
+
+[ext_resource type="Script" path="res://Blokus Menu and Functions/TextureRect.gd" id="1_tqa72"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x3qca"]
+size = Vector2(120, 131)
+
+[node name="Area2D" type="Area2D"]
+
+[node name="EnterCollison" type="CollisionShape2D" parent="."]
+position = Vector2(0, 36)
+shape = SubResource("RectangleShape2D_x3qca")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_direction = 1
+offset_left = -60.0
+offset_top = -24.0
+offset_right = 1160.0
+offset_bottom = 1186.0
+scale = Vector2(0.1, 0.1)
+script = ExtResource("1_tqa72")

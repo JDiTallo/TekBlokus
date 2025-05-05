@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cnqffl5tcq083"]
+
+[ext_resource type="Script" path="res://drop_zone.gd" id="1_w14x3"]
+
+[node name="drop_zone" type="Marker2D"]
+script = ExtResource("1_w14x3")

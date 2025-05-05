@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://chy6sbey0cy3w"]
+
+[ext_resource type="PackedScene" uid="uid://cilreebesbye1" path="res://Bloks/action.tscn" id="1_63vey"]
+[ext_resource type="PackedScene" uid="uid://cr040relpmpej" path="res://test2/static_body_2d.tscn" id="2_to3w0"]
+
+[node name="Test123" type="Node2D"]
+
+[node name="Action" parent="." instance=ExtResource("1_63vey")]
+position = Vector2(960, 202)
+
+[node name="platform" parent="." instance=ExtResource("2_to3w0")]
+position = Vector2(590, 216)
+
+[node name="platform2" parent="." instance=ExtResource("2_to3w0")]
+position = Vector2(1762, 347)
+
+[node name="Action2" parent="." instance=ExtResource("1_63vey")]
+position = Vector2(1111, 443)

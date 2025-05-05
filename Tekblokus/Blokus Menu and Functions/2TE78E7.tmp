@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=3 uid="uid://xjxhnin5ldsn"]
+
+[ext_resource type="PackedScene" uid="uid://cr040relpmpej" path="res://test2/static_body_2d.tscn" id="2_ilq5r"]
+[ext_resource type="Script" path="res://Bloks/TestBlock.gd" id="3_a5w1q"]
+[ext_resource type="PackedScene" uid="uid://dx68nitp10r5a" path="res://Bloks/dropbox.tscn" id="4_eagqa"]
+[ext_resource type="PackedScene" uid="uid://32eaofnlswor" path="res://character.tscn" id="5_k5rkb"]
+[ext_resource type="PackedScene" uid="uid://co4kesq32wfht" path="res://Test Envirroment/W.tscn" id="6_2eu4a"]
+
+[node name="Test123" type="Node2D"]
+
+[node name="platform" parent="." instance=ExtResource("2_ilq5r")]
+position = Vector2(198, 212)
+
+[node name="platform2" parent="." instance=ExtResource("2_ilq5r")]
+position = Vector2(583, 219)
+
+[node name="TestBlock" type="ColorRect" parent="."]
+offset_left = 59.0
+offset_top = 432.0
+offset_right = 366.0
+offset_bottom = 701.0
+script = ExtResource("3_a5w1q")
+
+[node name="Dropbox" parent="." instance=ExtResource("4_eagqa")]
+position = Vector2(1085, 864)
+
+[node name="Character" parent="." instance=ExtResource("5_k5rkb")]
+position = Vector2(1282, 314)
+
+[node name="W" parent="." instance=ExtResource("6_2eu4a")]
+position = Vector2(956, 458)

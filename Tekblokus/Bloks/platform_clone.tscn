@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://cb5jeofjnjaho"]
+
+[ext_resource type="PackedScene" uid="uid://cr040relpmpej" path="res://Blokus Menu and Functions/Platforms/static_body_2d.tscn" id="1_llmhe"]
+
+[node name="platform" instance=ExtResource("1_llmhe")]
+
+[node name="CollisionShape2D" parent="." index="0"]
+position = Vector2(3, 31.75)
+
+[node name="ColorRect" parent="." index="1"]
+offset_top = -51.0

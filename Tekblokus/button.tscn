@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckt8f65uh1k60"]
+
+[ext_resource type="Texture2D" uid="uid://dba1of8o5lwwu" path="res://textures/level extras/buttons/Button_0.png" id="1_3tadu"]
+
+[node name="Area2D" type="Area2D"]
+
+[node name="Button0" type="Sprite2D" parent="."]
+position = Vector2(531, 302)
+texture = ExtResource("1_3tadu")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(501, 248, 555, 248, 555, 254, 567, 254, 567, 260, 573, 260, 573, 272, 579, 272, 579, 356, 573, 356, 573, 368, 567, 368, 567, 374, 555, 374, 555, 380, 501, 380, 501, 374, 489, 374, 489, 368, 483, 368, 483, 356, 477, 356, 477, 272, 483, 272, 483, 260, 489, 260, 489, 254, 501, 254)

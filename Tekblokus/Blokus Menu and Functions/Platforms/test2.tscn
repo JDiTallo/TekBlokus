@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dticaqfdynxkl"]
+
+[ext_resource type="PackedScene" uid="uid://d28675xrgdr6l" path="res://Blokus Menu and Functions/Platforms/test2icon.tscn" id="2_n2ajt"]
+[ext_resource type="PackedScene" uid="uid://cr040relpmpej" path="res://Blokus Menu and Functions/Platforms/static_body_2d.tscn" id="2_vf7hc"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="object" parent="." instance=ExtResource("2_n2ajt")]
+position = Vector2(204, 666)
+
+[node name="StaticBody2D" parent="." instance=ExtResource("2_vf7hc")]
+position = Vector2(470, 310)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("2_vf7hc")]
+position = Vector2(721, 541)

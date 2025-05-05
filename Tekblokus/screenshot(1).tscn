@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://r8j7j7yuafqe"]
+
+[ext_resource type="Texture2D" uid="uid://bj7o01cufpxbe" path="res://Screenshot (1).png" id="1_ndnac"]
+
+[node name="Screenshot(1)" type="Sprite2D"]
+position = Vector2(977, 545)
+scale = Vector2(1.025, 1.025)
+texture = ExtResource("1_ndnac")

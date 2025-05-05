@@ -1,0 +1,194 @@
+[gd_scene load_steps=10 format=3 uid="uid://xjxhnin5ldsn"]
+
+[ext_resource type="PackedScene" uid="uid://cr040relpmpej" path="res://Blokus Menu and Functions/Platforms/static_body_2d.tscn" id="2_ilq5r"]
+[ext_resource type="Texture2D" uid="uid://cayebvlbwhlq1" path="res://Blokus Menu and Functions/up.png" id="5_5su13"]
+[ext_resource type="PackedScene" uid="uid://co4kesq32wfht" path="res://Blokus Menu and Functions/W.tscn" id="6_2eu4a"]
+[ext_resource type="Script" path="res://Blokus Menu and Functions/Movement Scripts/Down.gd" id="6_33c10"]
+[ext_resource type="Script" path="res://Blokus Menu and Functions/Movement Scripts/Left.gd" id="7_dsmuf"]
+[ext_resource type="Texture2D" uid="uid://wlkd0sxvq40l" path="res://Blokus Menu and Functions/down.png" id="7_efs1h"]
+[ext_resource type="Script" path="res://Blokus Menu and Functions/Movement Scripts/right.gd" id="8_jojii"]
+[ext_resource type="Texture2D" uid="uid://ybeqabuptct2" path="res://Blokus Menu and Functions/left.png" id="9_q6thm"]
+[ext_resource type="Texture2D" uid="uid://b2vmp340qwwm" path="res://Blokus Menu and Functions/right.png" id="11_b3u6o"]
+
+[node name="Test123" type="Node2D"]
+
+[node name="platform" parent="." groups=["dropable", "w"] instance=ExtResource("2_ilq5r")]
+position = Vector2(1628, 124)
+scale = Vector2(0.5, 0.5)
+
+[node name="platform2" parent="." groups=["dropable", "w"] instance=ExtResource("2_ilq5r")]
+position = Vector2(1793, 125)
+scale = Vector2(0.5, 0.5)
+
+[node name="Up" parent="." instance=ExtResource("6_2eu4a")]
+position = Vector2(1642, 711)
+
+[node name="Sprite2D" parent="Up" index="0"]
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("5_5su13")
+
+[node name="CollisionShape2D" parent="Up/Sprite2D/Area2D" index="0"]
+z_index = 4
+position = Vector2(0, 0)
+scale = Vector2(0.999999, 0.999999)
+
+[node name="Down" parent="." instance=ExtResource("6_2eu4a")]
+position = Vector2(1651, 874)
+script = ExtResource("6_33c10")
+
+[node name="Sprite2D" parent="Down" index="0"]
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("7_efs1h")
+
+[node name="CollisionShape2D" parent="Down/Sprite2D/Area2D" index="0"]
+z_index = 4
+position = Vector2(0, 0)
+scale = Vector2(0.999999, 0.999999)
+
+[node name="Left" parent="." instance=ExtResource("6_2eu4a")]
+position = Vector2(1483, 870)
+script = ExtResource("7_dsmuf")
+
+[node name="Sprite2D" parent="Left" index="0"]
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("9_q6thm")
+
+[node name="CollisionShape2D" parent="Left/Sprite2D/Area2D" index="0"]
+z_index = 4
+position = Vector2(4.76837e-05, 4.76837e-07)
+
+[node name="Right" parent="." instance=ExtResource("6_2eu4a")]
+position = Vector2(1822, 868)
+script = ExtResource("8_jojii")
+
+[node name="Sprite2D" parent="Right" index="0"]
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("11_b3u6o")
+
+[node name="CollisionShape2D" parent="Right/Sprite2D/Area2D" index="0"]
+z_index = 4
+position = Vector2(4.76837e-05, 0)
+
+[node name="W" parent="." instance=ExtResource("6_2eu4a")]
+position = Vector2(1774, 710)
+
+[node name="Sprite2D" parent="W" index="0"]
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("5_5su13")
+
+[node name="CollisionShape2D" parent="W/Sprite2D/Area2D" index="0"]
+z_index = 4
+position = Vector2(0, 0)
+
+[node name="platform3" parent="." groups=["a", "dropable"] instance=ExtResource("2_ilq5r")]
+position = Vector2(1627, 249)
+scale = Vector2(0.5, 0.5)
+
+[node name="platform4" parent="." groups=["a", "dropable"] instance=ExtResource("2_ilq5r")]
+position = Vector2(1793, 251)
+scale = Vector2(0.5, 0.5)
+
+[node name="platform5" parent="." groups=["dropable", "s"] instance=ExtResource("2_ilq5r")]
+position = Vector2(1625, 376)
+scale = Vector2(0.5, 0.5)
+
+[node name="platform6" parent="." groups=["dropable", "s"] instance=ExtResource("2_ilq5r")]
+position = Vector2(1789, 380)
+scale = Vector2(0.5, 0.5)
+
+[node name="platform7" parent="." groups=["d", "dropable"] instance=ExtResource("2_ilq5r")]
+position = Vector2(1618, 517)
+scale = Vector2(0.5, 0.5)
+
+[node name="platform8" parent="." groups=["d", "dropable"] instance=ExtResource("2_ilq5r")]
+position = Vector2(1780, 519)
+scale = Vector2(0.5, 0.5)
+
+[node name="TextEdit13" type="TextEdit" parent="."]
+z_index = -1
+offset_left = 1354.0
+offset_top = 16.0
+offset_right = 1848.0
+offset_bottom = 57.0
+text = "These platforms respond to different keys."
+editable = false
+
+[node name="TextEdit11" type="TextEdit" parent="."]
+z_index = -1
+offset_left = 1364.0
+offset_top = 219.0
+offset_right = 1499.0
+offset_bottom = 260.0
+text = "A"
+editable = false
+
+[node name="TextEdit12" type="TextEdit" parent="."]
+z_index = -1
+offset_left = 1351.0
+offset_top = 485.0
+offset_right = 1486.0
+offset_bottom = 526.0
+text = "D"
+editable = false
+
+[node name="TextEdit10" type="TextEdit" parent="."]
+z_index = -1
+offset_left = 1367.0
+offset_top = 343.0
+offset_right = 1502.0
+offset_bottom = 384.0
+text = "S"
+editable = false
+
+[node name="TextEdit9" type="TextEdit" parent="."]
+z_index = -1
+offset_left = 1363.0
+offset_top = 114.0
+offset_right = 1498.0
+offset_bottom = 155.0
+text = "W"
+editable = false
+
+[node name="TextEdit6" type="TextEdit" parent="."]
+z_index = -1
+offset_left = 1756.0
+offset_top = 799.0
+offset_right = 1891.0
+offset_bottom = 840.0
+text = "Right"
+editable = false
+
+[node name="TextEdit7" type="TextEdit" parent="."]
+z_index = -1
+offset_left = 1425.0
+offset_top = 795.0
+offset_right = 1552.0
+offset_bottom = 833.0
+text = "Left"
+editable = false
+
+[node name="TextEdit8" type="TextEdit" parent="."]
+z_index = -1
+offset_left = 1575.0
+offset_top = 793.0
+offset_right = 1722.0
+offset_bottom = 844.0
+text = "Down"
+editable = false
+
+[node name="TextEdit5" type="TextEdit" parent="."]
+z_index = -1
+offset_left = 1589.0
+offset_top = 623.0
+offset_right = 1822.0
+offset_bottom = 677.0
+text = "Up"
+editable = false
+
+[connection signal="child_entered_tree" from="platform" to="Up" method="_on_child_entered_W_tree"]
+
+[editable path="Up"]
+[editable path="Down"]
+[editable path="Left"]
+[editable path="Right"]
+[editable path="W"]

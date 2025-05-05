@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://ukpa2u7v7hkg"]
+
+[ext_resource type="Texture2D" uid="uid://cayebvlbwhlq1" path="res://Blokus Menu and Functions/up.png" id="1_2fxky"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g8qk7"]
+size = Vector2(933.333, 933.333)
+
+[node name="Up" type="Node2D"]
+
+[node name="Up" type="Sprite2D" parent="."]
+position = Vector2(0, -0.999996)
+scale = Vector2(0.075, 0.075)
+texture = ExtResource("1_2fxky")
+
+[node name="Area2D" type="Area2D" parent="Up"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Up/Area2D"]
+position = Vector2(-1.11262e-05, -9.53674e-05)
+shape = SubResource("RectangleShape2D_g8qk7")
